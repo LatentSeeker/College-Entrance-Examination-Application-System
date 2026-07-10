@@ -1,0 +1,13 @@
+# 高考志愿填报系统 依赖
+# 已在 conda 环境 pytorch_nightly (Python 3.11) 中验证可用。
+#
+# 注意：llama-cpp-python 需安装带 CUDA 的版本才能用 GPU。
+#   本机已用本地 wheel 安装：
+#   pip install "D:\NewCode\Qwen3.5-9B\llama_cpp_python-0.3.29-py3-none-win_amd64.whl"
+#   或官方 CUDA 源：
+#   pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124
+
+streamlit>=1.40
+pandas>=2.0
+llama-cpp-python>=0.3.0
+requests>=2.31   # tools/fetch_admissions.py 抓取脚本用
